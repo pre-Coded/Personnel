@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap" rel="stylesheet">
+    <style> 
+    .bg-image{
+        background-position: center;
+        background-size: contain;
+        background-image: url(img1.jpg);
+    }
+
+    .add{
+        opacity: 100;
+    }
+    </style>
+</head>
+<body>
+    <div class="bg-image h-screen w-screen -z-10 absolute"></div>
+    <div class="z-0 h-screen w-screen backdrop-blur-sm">
+        <header class="h-[25%] w-screen flex flex-col justify-center items-center">    
+            <h2 class="text-5xl text-slate-700 italic" style="font-family: 'Proza Libre', sans-serif;">Hey.. ToTo</h2>
+
+            <h2 class="text-4xl text-slate-600 p-8 italic animate-bounce">I love you </h2>
+        </header>   
+        <!-- video section -->
+        <div>
+            <video src="vid1.mp4" class="absolute bottom-2 p-2 shadow-md rounded-md " autoplay="true" id="vid" controls></video>
+
+            <!-- img section -->
+            <div class="h-80 w-screen bottom-2 absolute p-4 grid grid-cols-3 overflow-scroll hidden" id="images">
+                <img src="img2.jpg" alt="" class="contain">
+                <img src="img3.jpg" alt="" class="contain">
+                <img src="img4.jpg" alt="" class="contain">
+                <img src="img5.png" alt="" class="contain">
+                <img src="img6.png" alt="" class="contain">
+                <img src="img7.png" alt="">    
+                <img src="img8.jpg" alt="">   
+                <img src="img9.jpg" alt="">         
+                <img src="img10.jpg" alt="">         
+                <img src="img11.jpg" alt="">         
+                <img src="img12.jpg" alt="">         
+                <img src="img13.jpg" alt="">         
+                <img src="img14.jpeg" alt="">         
+                <img src="img15.png" alt="">         
+                <img src="img16.jpg" alt="">                 
+            </div>
+            <!-- note -->
+            <p class="p-8 h-80 w-sreen shadow-lg text-xl text-slate-900 backdrop-blur-lg overflow-scroll hidden"
+            style = "font-family: 'Proza Libre', sans-serif;" id="para">
+                Amm, toto or ya bolu tatti, isi naam se tujhe bulana shuru kia, 😂 but anyways tatti se toto ban gai tu and or pata bhi nai chala, 2 month bhi chale gaye ye bhi nai malum para wese to, or long distance me gaye vo bhi, ye sayd bore jaisa ho raha but padh tu chup chap,🙃 or ye bhi nai pata tha that i'll meet you any time, matlab socha bhi nai tha, but we met, and to be honest, i really am lucky to find you, to have someone like you jisse sari bate kar sako, matlab had level ki sari is really a blessing, me bar bar nai bolta, but it's true. And tera gussa hona, or thodi si samajhdar hona, ye bhi, tu combo me mili yr, sachme, matlab, for a long time, i was wishing someone just like you, and tu mili. I'd never wish to lose, can't afford that, can I ? ... I love you..for the rest of years to come.. TOTO.... 
+            </p>
+        </div>
+    </div>
+
+    <script>
+        var vid = document.getElementById('vid');
+        var images = document.getElementById('images');
+        var para = document.getElementById('para');
+
+        setInterval(() => {
+            vid.style.display = "none";
+            images.style.display = "grid";
+            para.style.display = "block";
+        }, 11000);
+        
+    </script>
+</body>
+</html>
